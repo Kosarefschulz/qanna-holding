@@ -1,26 +1,264 @@
 @import "tailwindcss";
 
+/* ===================================
+   QANNA HOLDING DESIGN SYSTEM
+   =================================== */
+
 :root {
+  /* Primary Colors */
+  --qanna-navy: #1B355D;
+  --qanna-navy-light: #2A4A7A;
+  --qanna-navy-dark: #0F1F3A;
+
+  /* Accent Colors */
+  --qanna-gold: #CC9F52;
+  --qanna-gold-light: #D9B574;
+  --qanna-gold-dark: #A67F3D;
+
+  /* Secondary Colors */
+  --qanna-burgundy: #8B1E41;
+  --qanna-green: #3F7C5B;
+
+  /* Company Colors */
+  --company-wertvoll: #22C55E;      /* Grün - Garten/Natur */
+  --company-qanna: #3B82F6;         /* Blau - Beratung/Vertrauen */
+  --company-eckstein: #F97316;      /* Orange - Bau/Energie */
+  --company-ai: #8B5CF6;            /* Lila - KI/Innovation */
+
+  /* Neutral Colors */
+  --qanna-gray-50: #F9FAFB;
+  --qanna-gray-100: #E7E6E6;
+  --qanna-gray-200: #D1D5DB;
+  --qanna-gray-300: #9CA3AF;
+  --qanna-gray-400: #6B7280;
+  --qanna-gray-500: #4B5563;
+  --qanna-gray-600: #374151;
+  --qanna-gray-700: #1F2937;
+  --qanna-gray-800: #111827;
+  --qanna-gray-900: #030712;
+
+  /* Semantic Colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1A1A1A;
+  --muted: var(--qanna-gray-100);
+  --muted-foreground: var(--qanna-gray-500);
+  --border: var(--qanna-gray-200);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
+/* Tailwind Theme Integration */
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-qanna-navy: var(--qanna-navy);
+  --color-qanna-navy-light: var(--qanna-navy-light);
+  --color-qanna-navy-dark: var(--qanna-navy-dark);
+
+  --color-qanna-gold: var(--qanna-gold);
+  --color-qanna-gold-light: var(--qanna-gold-light);
+  --color-qanna-gold-dark: var(--qanna-gold-dark);
+
+  --color-qanna-burgundy: var(--qanna-burgundy);
+  --color-qanna-green: var(--qanna-green);
+
+  /* Company Colors */
+  --color-company-wertvoll: var(--company-wertvoll);
+  --color-company-qanna: var(--company-qanna);
+  --color-company-eckstein: var(--company-eckstein);
+  --color-company-ai: var(--company-ai);
+
+  --color-qanna-gray-50: var(--qanna-gray-50);
+  --color-qanna-gray-100: var(--qanna-gray-100);
+  --color-qanna-gray-200: var(--qanna-gray-200);
+  --color-qanna-gray-300: var(--qanna-gray-300);
+  --color-qanna-gray-400: var(--qanna-gray-400);
+  --color-qanna-gray-500: var(--qanna-gray-500);
+
+  /* Font */
+  --font-sans: var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base Styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+/* Link Base */
+a:not([class*="hover:"]) {
+  color: var(--qanna-navy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:not([class*="hover:"]):hover {
+  color: var(--qanna-navy-light);
+}
+
+/* Footer Links */
+footer a {
+  color: white !important;
+}
+
+footer a:hover {
+  color: var(--qanna-gold) !important;
+}
+
+/* Button Link Fix */
+button a,
+button a:hover,
+button a:visited,
+button a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Selection */
+::selection {
+  background: var(--qanna-gold);
+  color: white;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--qanna-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--qanna-gray-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--qanna-navy);
+}
+
+/* Utility Classes */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--qanna-gold) 0%, var(--qanna-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-navy-gradient {
+  background: linear-gradient(135deg, var(--qanna-navy-dark) 0%, var(--qanna-navy) 100%);
+}
+
+/* Container */
+.container-qanna {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-qanna {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-qanna {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Section Spacing */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.6s ease-out forwards;
 }

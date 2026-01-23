@@ -218,11 +218,11 @@ export function TeamGallery({
         >
           <div className="text-center">
             <div className="text-3xl font-bold text-qanna-gold">7+</div>
-            <p className="text-sm text-qanna-gray-500 mt-1">Mitarbeiter</p>
+            <p className="text-sm text-qanna-gray-500 mt-1">Jahre Erfahrung</p>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-qanna-gold">2</div>
-            <p className="text-sm text-qanna-gray-500 mt-1">Marken</p>
+            <p className="text-sm text-qanna-gray-500 mt-1">Starke Marken</p>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-qanna-gold">OWL</div>

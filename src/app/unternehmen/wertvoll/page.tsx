@@ -32,10 +32,10 @@ const services = [
 ];
 
 const stats = [
-  { value: 720, suffix: "k+", label: "Umsatz 2025 (EUR)" },
-  { value: 7, suffix: "", label: "Vollzeit-Mitarbeiter" },
-  { value: 4, suffix: "", label: "Minijobber" },
-  { value: 2, suffix: "", label: "Marken" },
+  { value: 7, suffix: "+", label: "Jahre Erfahrung" },
+  { value: 2, suffix: "", label: "Starke Marken" },
+  { value: 1000, suffix: "+", label: "Zufriedene Kunden" },
+  { value: 1, suffix: "", label: "Region: OWL" },
 ];
 
 // Team Gallery Images

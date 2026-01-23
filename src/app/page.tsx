@@ -96,7 +96,7 @@ const team = [
 // Stats
 const stats = [
   { value: 4, suffix: "", label: "Gesellschaften" },
-  { value: 11, suffix: "+", label: "Mitarbeiter" },
+  { value: 5, suffix: "", label: "Geschäftsfelder" },
   { value: 4, suffix: "", label: "Marken" },
 ];
 

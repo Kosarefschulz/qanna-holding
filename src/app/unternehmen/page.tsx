@@ -16,8 +16,8 @@ const companies = [
       { name: "Wertvoll Gartenservice", url: "https://wertvoll-gartenservice.de" },
     ],
     stats: [
-      { label: "Umsatz 2025", value: "720k+" },
-      { label: "Mitarbeiter", value: "11+" },
+      { label: "Erfahrung", value: "7+ Jahre" },
+      { label: "Region", value: "OWL" },
     ],
     gf: "Michael Michalowski",
     icon: (

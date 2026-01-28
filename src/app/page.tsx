@@ -76,13 +76,13 @@ const team = [
   {
     name: "Markus Knaub",
     role: "Strategie & Finanzen",
-    description: "Geschäftsführer Qanna GmbH",
+    description: "Geschäftsführer Eckstein GmbH",
     image: "/images/team/markus-knaub.jpg",
   },
   {
     name: "Andreas Sudermann",
     role: "Projektleitung",
-    description: "Geschäftsführer Eckstein GmbH",
+    description: "Geschäftsführer Qanna Holding",
     image: "/images/team/andreas-sudermann.jpg",
   },
   {

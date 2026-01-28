@@ -11,7 +11,7 @@ const teamMembers = [
     name: "Sergej Schulz",
     age: 33,
     role: "Marketing & IT",
-    position: "Geschäftsführer Qanna Holding & Qanna GmbH",
+    position: "Geschäftsführer Qanna GmbH",
     focus: ["Digitalisierung", "KI-Strategie", "Marketing"],
     image: "/images/team/sergej-schulz.jpg",
     story: `Sergej ist spezialisiert auf die digitale Transformation und den Einsatz von KI-gestützten Lösungen in Unternehmen. Seine Stärken liegen in der Entwicklung innovativer Marketingstrategien und der technischen Umsetzung komplexer IT-Projekte.
@@ -23,24 +23,24 @@ Heute leitet er als Geschäftsführer die Qanna GmbH und bringt seine Expertise 
     id: "markus-knaub",
     name: "Markus Knaub",
     role: "Strategie & Finanzen",
-    position: "Geschäftsführer Qanna GmbH & Eckstein GmbH",
+    position: "Geschäftsführer Eckstein GmbH",
     focus: ["M&A", "Controlling", "Unternehmensfinanzierung"],
     image: "/images/team/markus-knaub.jpg",
     story: `Markus bringt umfangreiche Erfahrung in der strategischen Unternehmensführung und Finanzplanung mit. Seine Expertise liegt in der Strukturierung komplexer Transaktionen und der Entwicklung nachhaltiger Finanzierungsstrategien.
 
-Als Geschäftsführer der Qanna GmbH und Eckstein GmbH verantwortet er die strategische Ausrichtung und finanzielle Steuerung der Unternehmensgruppe.`,
+Als Geschäftsführer der Eckstein GmbH verantwortet er die strategische Ausrichtung und finanzielle Steuerung des Unternehmens.`,
     linkedin: "https://linkedin.com",
   },
   {
     id: "andreas-sudermann",
     name: "Andreas Sudermann",
     role: "Projektleitung",
-    position: "Geschäftsführer Eckstein GmbH",
+    position: "Geschäftsführer Qanna Holding",
     focus: ["Operative Exzellenz", "Qualitätssicherung", "Projektmanagement"],
     image: "/images/team/andreas-sudermann.jpg",
     story: `Nach einer Bankausbildung und BWL-Studium startete Andreas seine Karriere bei Ernst & Young. Es folgten 7 Jahre bei Bertelsmann/arvato im Bereich Finance & Controlling, bevor er als CFO zur Hagedorn Unternehmensgruppe wechselte, wo er 5 Jahre die Finanzstrategie mitgestaltete.
 
-Als Geschäftsführer der Eckstein GmbH leitet er das operative Geschäft und hat das Unternehmen zur Nr. 1 bei Google in Bielefeld im Bereich Schadstoffsanierung geführt.`,
+Als Geschäftsführer der Qanna Holding bringt er seine umfangreiche Erfahrung in Finanzen und Controlling in die strategische Führung der Unternehmensgruppe ein.`,
     linkedin: "https://linkedin.com",
   },
   {

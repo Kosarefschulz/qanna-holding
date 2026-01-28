@@ -194,41 +194,22 @@ export default function EcksteinPage() {
               </div>
             </FadeIn>
 
-            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              <StaggerItem>
-                <Card variant="elevated" padding="lg" className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-qanna-navy/10 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-qanna-navy">AS</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-qanna-navy mb-1">
-                    Andreas Sudermann
-                  </h3>
-                  <p className="text-qanna-gold font-medium mb-4">
-                    Geschäftsführer
-                  </p>
-                  <p className="text-qanna-gray-500 text-sm">
-                    Projektleitung & Operative Exzellenz
-                  </p>
-                </Card>
-              </StaggerItem>
-
-              <StaggerItem>
-                <Card variant="elevated" padding="lg" className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-qanna-navy/10 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-qanna-navy">MK</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-qanna-navy mb-1">
-                    Markus Knaub
-                  </h3>
-                  <p className="text-qanna-gold font-medium mb-4">
-                    Geschäftsführer
-                  </p>
-                  <p className="text-qanna-gray-500 text-sm">
-                    Strategie & Finanzen
-                  </p>
-                </Card>
-              </StaggerItem>
-            </StaggerContainer>
+            <FadeIn>
+              <Card variant="elevated" padding="lg" className="text-center max-w-sm mx-auto">
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-qanna-navy/10 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-qanna-navy">MK</span>
+                </div>
+                <h3 className="text-xl font-bold text-qanna-navy mb-1">
+                  Markus Knaub
+                </h3>
+                <p className="text-qanna-gold font-medium mb-4">
+                  Geschäftsführer
+                </p>
+                <p className="text-qanna-gray-500 text-sm">
+                  Strategie & Finanzen
+                </p>
+              </Card>
+            </FadeIn>
           </div>
         </section>
 

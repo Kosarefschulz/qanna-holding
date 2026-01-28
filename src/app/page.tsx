@@ -69,26 +69,22 @@ const companies = [
 const team = [
   {
     name: "Sergej Schulz",
-    role: "Marketing & IT",
-    description: "Geschäftsführer Qanna GmbH",
+    company: "Qanna GmbH",
     image: "/images/team/sergej-schulz.jpg",
   },
   {
     name: "Markus Knaub",
-    role: "Strategie & Finanzen",
-    description: "Geschäftsführer Eckstein GmbH",
+    company: "Eckstein GmbH",
     image: "/images/team/markus-knaub.jpg",
   },
   {
     name: "Andreas Sudermann",
-    role: "Projektleitung",
-    description: "Geschäftsführer Qanna Holding",
+    company: "Qanna Holding GmbH",
     image: "/images/team/andreas-sudermann.jpg",
   },
   {
     name: "Michael Michalowski",
-    role: "Vertrieb",
-    description: "Geschäftsführer Wertvoll GmbH",
+    company: "Wertvoll GmbH",
     image: "/images/team/michael-michalowski.jpg",
   },
 ];
@@ -255,11 +251,11 @@ export default function HomePage() {
                     <h3 className="text-lg font-bold text-qanna-navy mb-1">
                       {member.name}
                     </h3>
-                    <p className="text-qanna-gold font-medium text-sm mb-2">
-                      {member.role}
+                    <p className="text-qanna-gold font-medium text-sm mb-1">
+                      Geschäftsführer
                     </p>
                     <p className="text-qanna-gray-500 text-sm">
-                      {member.description}
+                      {member.company}
                     </p>
                   </Card>
                 </StaggerItem>

@@ -10,8 +10,7 @@ const teamMembers = [
     id: "sergej-schulz",
     name: "Sergej Schulz",
     age: 33,
-    role: "Marketing & IT",
-    position: "Geschäftsführer Qanna GmbH",
+    company: "Qanna GmbH",
     focus: ["Digitalisierung", "KI-Strategie", "Marketing"],
     image: "/images/team/sergej-schulz.jpg",
     story: `Sergej ist spezialisiert auf die digitale Transformation und den Einsatz von KI-gestützten Lösungen in Unternehmen. Seine Stärken liegen in der Entwicklung innovativer Marketingstrategien und der technischen Umsetzung komplexer IT-Projekte.
@@ -22,8 +21,7 @@ Heute leitet er als Geschäftsführer die Qanna GmbH und bringt seine Expertise 
   {
     id: "markus-knaub",
     name: "Markus Knaub",
-    role: "Strategie & Finanzen",
-    position: "Geschäftsführer Eckstein GmbH",
+    company: "Eckstein GmbH",
     focus: ["M&A", "Controlling", "Unternehmensfinanzierung"],
     image: "/images/team/markus-knaub.jpg",
     story: `Markus bringt umfangreiche Erfahrung in der strategischen Unternehmensführung und Finanzplanung mit. Seine Expertise liegt in der Strukturierung komplexer Transaktionen und der Entwicklung nachhaltiger Finanzierungsstrategien.
@@ -34,25 +32,23 @@ Als Geschäftsführer der Eckstein GmbH verantwortet er die strategische Ausrich
   {
     id: "andreas-sudermann",
     name: "Andreas Sudermann",
-    role: "Projektleitung",
-    position: "Geschäftsführer Qanna Holding",
+    company: "Qanna Holding GmbH",
     focus: ["Operative Exzellenz", "Qualitätssicherung", "Projektmanagement"],
     image: "/images/team/andreas-sudermann.jpg",
     story: `Nach einer Bankausbildung und BWL-Studium startete Andreas seine Karriere bei Ernst & Young. Es folgten 7 Jahre bei Bertelsmann/arvato im Bereich Finance & Controlling, bevor er als CFO zur Hagedorn Unternehmensgruppe wechselte, wo er 5 Jahre die Finanzstrategie mitgestaltete.
 
-Als Geschäftsführer der Qanna Holding bringt er seine umfangreiche Erfahrung in Finanzen und Controlling in die strategische Führung der Unternehmensgruppe ein.`,
+Als Geschäftsführer der Qanna Holding GmbH bringt er seine umfangreiche Erfahrung in Finanzen und Controlling in die strategische Führung der Unternehmensgruppe ein.`,
     linkedin: "https://linkedin.com",
   },
   {
     id: "michael-michalowski",
     name: "Michael Michalowski",
-    role: "Vertrieb",
-    position: "Geschäftsführer Wertvoll Dienstleistungen GmbH",
+    company: "Wertvoll GmbH",
     focus: ["Kundenbeziehungen", "Geschäftsentwicklung", "Teamführung"],
     image: "/images/team/michael-michalowski.jpg",
     story: `Michael verfügt über 7 Jahre Erfahrung als Rümpel Meister Franchisenehmer und hat sich als erfolgreicher Unternehmer im Dienstleistungssektor etabliert. Seine Stärke liegt im Aufbau langfristiger Kundenbeziehungen und der Führung operativer Teams.
 
-Als Geschäftsführer der Wertvoll Dienstleistungen GmbH verantwortet er die Marken Rümpel Schmiede und Wertvoll Gartenservice.`,
+Als Geschäftsführer der Wertvoll GmbH verantwortet er die Marken Rümpel Schmiede und Wertvoll Gartenservice.`,
     linkedin: "https://linkedin.com",
   },
 ];
@@ -119,11 +115,11 @@ export default function TeamPage() {
                             {member.age} Jahre
                           </p>
                         )}
-                        <p className="text-qanna-gold font-medium mb-4">
-                          {member.role}
+                        <p className="text-qanna-gold font-medium mb-1">
+                          Geschäftsführer
                         </p>
                         <p className="text-qanna-gray-500 text-sm mb-6">
-                          {member.position}
+                          {member.company}
                         </p>
 
                         {/* Focus Areas */}

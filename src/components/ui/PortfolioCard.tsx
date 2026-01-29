@@ -48,7 +48,7 @@ const brandLogos: Record<string, string> = {
   "rümpel-schmiede.de": "/images/logos/ruempelschmiede.png",
   "wertvoll-gartenservice.de": "/images/logos/wertvoll-gartenservice.png",
   "rueckbaupro.de": "/images/logos/rueckbaupro.png",
-  "qanna-consulting.com": "/images/logos/qanna.png",
+  "qanna-beratung.de": "/images/logos/qanna.png",
   "effiprozess.de": "/images/logos/effiprozess.png",
 };
 

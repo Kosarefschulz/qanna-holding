@@ -14,7 +14,7 @@ const footerLinks = {
   brands: [
     { title: "Rümpel Schmiede", href: "https://rümpel-schmiede.de", external: true },
     { title: "RückbauPro", href: "https://rueckbaupro.de", external: true },
-    { title: "QANNA Consulting", href: "https://qanna-consulting.com", external: true },
+    { title: "QANNA Consulting", href: "https://qanna-beratung.de", external: true },
   ],
   about: [
     { title: "Unser Team", href: "/team" },

@@ -34,7 +34,7 @@ const companies = [
     tagline: "Unternehmensberatung & KI-Lösungen",
     description: "Strategische Unternehmensberatung mit Fokus auf KI-gestützte Lösungen, Unternehmensnachfolge, Restrukturierung und Finanzierungsberatung für den Mittelstand.",
     brands: [
-      { name: "QANNA Consulting", url: "https://qanna-consulting.com" },
+      { name: "QANNA Consulting", url: "https://qanna-beratung.de" },
     ],
     stats: [
       { label: "Branchen", value: "10+" },

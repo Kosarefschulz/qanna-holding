@@ -356,7 +356,7 @@ export default function KontaktPage() {
 
               <StaggerItem>
                 <a
-                  href="https://qanna-consulting.com"
+                  href="https://qanna-beratung.de"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -369,7 +369,7 @@ export default function KontaktPage() {
                       Unternehmensberatung & KI
                     </p>
                     <span className="text-qanna-gold font-medium">
-                      qanna-consulting.com →
+                      qanna-beratung.de →
                     </span>
                   </Card>
                 </a>

@@ -9,46 +9,29 @@ const teamMembers = [
   {
     id: "sergej-schulz",
     name: "Sergej Schulz",
-    age: 33,
     company: "Qanna GmbH",
-    focus: ["Digitalisierung", "KI-Strategie", "Marketing"],
     image: "/images/team/sergej-schulz.jpg",
-    story: `Sergej ist spezialisiert auf die digitale Transformation und den Einsatz von KI-gestützten Lösungen in Unternehmen. Seine Stärken liegen in der Entwicklung innovativer Marketingstrategien und der technischen Umsetzung komplexer IT-Projekte.
-
-Heute leitet er als Geschäftsführer die Qanna GmbH und bringt seine Expertise in Digitalisierung, KI-gestützte Prozessoptimierung und strategisches Marketing in die Holding ein.`,
     linkedin: "https://linkedin.com/in/sergejschulz",
   },
   {
     id: "markus-knaub",
     name: "Markus Knaub",
     company: "Eckstein GmbH",
-    focus: ["M&A", "Controlling", "Unternehmensfinanzierung"],
     image: "/images/team/markus-knaub.jpg",
-    story: `Markus bringt umfangreiche Erfahrung in der strategischen Unternehmensführung und Finanzplanung mit. Seine Expertise liegt in der Strukturierung komplexer Transaktionen und der Entwicklung nachhaltiger Finanzierungsstrategien.
-
-Als Geschäftsführer der Eckstein GmbH verantwortet er die strategische Ausrichtung und finanzielle Steuerung des Unternehmens.`,
     linkedin: "https://linkedin.com",
   },
   {
     id: "andreas-sudermann",
     name: "Andreas Sudermann",
     company: "Qanna Holding GmbH",
-    focus: ["Operative Exzellenz", "Qualitätssicherung", "Projektmanagement"],
     image: "/images/team/andreas-sudermann.jpg",
-    story: `Nach einer Bankausbildung und BWL-Studium startete Andreas seine Karriere bei Ernst & Young. Es folgten 7 Jahre bei Bertelsmann/arvato im Bereich Finance & Controlling, bevor er als CFO zur Hagedorn Unternehmensgruppe wechselte, wo er 5 Jahre die Finanzstrategie mitgestaltete.
-
-Als Geschäftsführer der Qanna Holding GmbH bringt er seine umfangreiche Erfahrung in Finanzen und Controlling in die strategische Führung der Unternehmensgruppe ein.`,
     linkedin: "https://linkedin.com",
   },
   {
     id: "michael-michalowski",
     name: "Michael Michalowski",
     company: "Wertvoll GmbH",
-    focus: ["Kundenbeziehungen", "Geschäftsentwicklung", "Teamführung"],
     image: "/images/team/michael-michalowski.jpg",
-    story: `Michael verfügt über 7 Jahre Erfahrung als Rümpel Meister Franchisenehmer und hat sich als erfolgreicher Unternehmer im Dienstleistungssektor etabliert. Seine Stärke liegt im Aufbau langfristiger Kundenbeziehungen und der Führung operativer Teams.
-
-Als Geschäftsführer der Wertvoll GmbH verantwortet er die Marken Rümpel Schmiede und Wertvoll Gartenservice.`,
     linkedin: "https://linkedin.com",
   },
 ];
@@ -83,16 +66,10 @@ export default function TeamPage() {
         {/* Team Members */}
         <section className="section-padding bg-white">
           <div className="container-qanna">
-            <StaggerContainer className="space-y-16">
-              {teamMembers.map((member, index) => (
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {teamMembers.map((member) => (
                 <StaggerItem key={member.id}>
-                  <div
-                    className={`grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start ${
-                      index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                    }`}
-                  >
-                    {/* Profile Card */}
-                    <Card variant="elevated" padding="lg" className="lg:sticky lg:top-24">
+                  <Card variant="elevated" padding="lg" className="h-full">
                       <div className="text-center">
                         <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden bg-qanna-navy/10 flex items-center justify-center">
                           {member.image ? (
@@ -110,29 +87,12 @@ export default function TeamPage() {
                         <h2 className="text-2xl font-bold text-qanna-navy mb-1">
                           {member.name}
                         </h2>
-                        {member.age && (
-                          <p className="text-qanna-gray-400 text-sm mb-2">
-                            {member.age} Jahre
-                          </p>
-                        )}
                         <p className="text-qanna-gold font-medium mb-1">
                           Geschäftsführer
                         </p>
                         <p className="text-qanna-gray-500 text-sm mb-6">
                           {member.company}
                         </p>
-
-                        {/* Focus Areas */}
-                        <div className="flex flex-wrap justify-center gap-2 mb-6">
-                          {member.focus.map((area) => (
-                            <span
-                              key={area}
-                              className="text-xs bg-qanna-navy/10 text-qanna-navy px-3 py-1 rounded-full"
-                            >
-                              {area}
-                            </span>
-                          ))}
-                        </div>
 
                         {/* LinkedIn */}
                         {member.linkedin && (
@@ -149,22 +109,7 @@ export default function TeamPage() {
                           </a>
                         )}
                       </div>
-                    </Card>
-
-                    {/* Story */}
-                    <div className="lg:col-span-2">
-                      <h3 className="text-xl font-bold text-qanna-navy mb-4">
-                        Werdegang
-                      </h3>
-                      <div className="prose prose-lg text-qanna-gray-500">
-                        {member.story.split("\n\n").map((paragraph, i) => (
-                          <p key={i} className="mb-4 leading-relaxed">
-                            {paragraph}
-                          </p>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                  </Card>
                 </StaggerItem>
               ))}
             </StaggerContainer>

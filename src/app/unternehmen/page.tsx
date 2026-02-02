@@ -12,7 +12,7 @@ const companies = [
     tagline: "Professionelle Entrümpelung & Gartenservice",
     description: "Die Wertvoll Dienstleistungen GmbH bietet professionelle Entrümpelungen, Haushaltsauflösungen und umfassenden Gartenservice für Privat- und Gewerbekunden in der Region Ostwestfalen-Lippe.",
     brands: [
-      { name: "Rümpel Schmiede", url: "https://rümpel-schmiede.de" },
+      { name: "Rümpel Schmiede", url: "https://ruempel-schmiede.de" },
       { name: "Wertvoll Gartenservice", url: "https://wertvoll-gartenservice.de" },
     ],
     stats: [

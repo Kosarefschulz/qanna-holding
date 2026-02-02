@@ -162,12 +162,12 @@ export default function WertvollPage() {
                     Ostwestfalen-Lippe. Schnell, zuverlässig und fair.
                   </p>
                   <a
-                    href="https://rümpel-schmiede.de"
+                    href="https://ruempel-schmiede.de"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-qanna-navy hover:text-qanna-gold transition-colors font-medium"
                   >
-                    rümpel-schmiede.de
+                    ruempel-schmiede.de
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
@@ -334,7 +334,7 @@ export default function WertvollPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://rümpel-schmiede.de"
+                    href="https://ruempel-schmiede.de"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-4 bg-qanna-gold text-white font-semibold rounded-md hover:bg-qanna-gold-dark transition-colors"

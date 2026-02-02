@@ -335,7 +335,7 @@ export default function KontaktPage() {
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <StaggerItem>
                 <a
-                  href="https://rümpel-schmiede.de"
+                  href="https://ruempel-schmiede.de"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -348,7 +348,7 @@ export default function KontaktPage() {
                       Entrümpelung & Haushaltsauflösung
                     </p>
                     <span className="text-qanna-gold font-medium">
-                      rümpel-schmiede.de →
+                      ruempel-schmiede.de →
                     </span>
                   </Card>
                 </a>

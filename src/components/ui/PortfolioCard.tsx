@@ -45,7 +45,7 @@ const useGradientBackground: string[] = [];
 
 // Company logos - mapped to brand domains
 const brandLogos: Record<string, string> = {
-  "rümpel-schmiede.de": "/images/logos/ruempelschmiede.png",
+  "ruempel-schmiede.de": "/images/logos/ruempelschmiede.png",
   "wertvoll-gartenservice.de": "/images/logos/wertvoll-gartenservice.png",
   "rueckbaupro.de": "/images/logos/rueckbaupro.png",
   "qanna-beratung.de": "/images/logos/qanna.png",
